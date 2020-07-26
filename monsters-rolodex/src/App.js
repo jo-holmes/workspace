@@ -16,7 +16,7 @@ class App extends Component {
       .then((response) => response.json())
       .then((users) => this.setState({ monsters: users }));
   }
-
+  //comment added check
   render() {
     const { monsters, searchField } = this.state;
     const filterMonsters = monsters.filter(monster =>
